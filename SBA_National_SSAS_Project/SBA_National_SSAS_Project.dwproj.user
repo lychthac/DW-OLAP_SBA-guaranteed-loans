@@ -1,0 +1,29 @@
+<AnalysisServicesUserConfiguration xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Configurations>
+    <Configuration>
+      <Name>Development</Name>
+      <Options>
+        <UserIDs>
+          <ConfigurationSetting>
+            <Id>SBA National</Id>
+            <Name>SBA National</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwuN247KFF0CidxFsdaqT/gAAAAAaAAAAUwBCAEEAIABOAGEAdABpAG8AbgBhAGwAAAAQZgAAAAEAACAAAACiA18N/qa29WwWKGs+vcItPw6BmZq0NKIVNfkIxyBePAAAAAAOgAAAAAIAACAAAAAhCB/bTOvCT6JmyN5XuyaYeVRQBVp+J2nGhczCK68CdhAAAADale0NiMzS1AKFnP+lPoO+QAAAAIS+LIgJ9FelHVtpA3dTM7KM9/sP8DQBYcFs1DzMUnGV8yfArbrEF9PFXTCRX7GxYgNT/0K2BUA9XEuKr1+DtLg=</Value>
+          </ConfigurationSetting>
+        </UserIDs>
+        <UserPasswords>
+          <ConfigurationSetting>
+            <Id>SBA National</Id>
+            <Name>SBA National</Name>
+            <Value xsi:type="xsd:string">AQAAANCMnd8BFdERjHoAwE/Cl+sBAAAAwuN247KFF0CidxFsdaqT/gAAAAAaAAAAUwBCAEEAIABOAGEAdABpAG8AbgBhAGwAAAAQZgAAAAEAACAAAADOWf0o9C0Oup4l6nV1og1tGjzrazUPjOmAcMlZ/qN/CgAAAAAOgAAAAAIAACAAAAAOCkg9qYrOFMqXnYDYIi/KZVcTnCZ4oc4MV56dleCDwjAAAABT2Tsc6hJFSysqV67R0mGSpCW1gNWVX/HSo/MCtOYnGOBSGw5vVpZz9Ak2BdC7IWhAAAAAPGJaWwtR2QjU0HumkekjWc+N3+fVESZ09FTA5JQ2gur+50OHE2u+F5YvTbvyXec4/tts/fM+ewKk6Jj9WP12Ug==</Value>
+          </ConfigurationSetting>
+        </UserPasswords>
+        <TargetServer>localhost</TargetServer>
+        <TargetDatabase>SBA_National_SSAS_Project</TargetDatabase>
+        <StartObject>
+          <ObjectId></ObjectId>
+          <ObjectType>Current</ObjectType>
+        </StartObject>
+      </Options>
+    </Configuration>
+  </Configurations>
+</AnalysisServicesUserConfiguration>

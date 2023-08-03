@@ -1,0 +1,346 @@
+﻿<DataSourceView xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0" dwd:design-time-name="25203a8d-18f7-45ee-9846-919f64fdb9ca" xmlns="http://schemas.microsoft.com/analysisservices/2003/engine">
+  <ID>SBA National</ID>
+  <Name>SBA National</Name>
+  <CreatedTimestamp>0001-01-01T00:00:00Z</CreatedTimestamp>
+  <LastSchemaUpdate>0001-01-01T00:00:00Z</LastSchemaUpdate>
+  <Annotations>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:ShowFriendlyNames</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:CurrentLayout</Name>
+      <Value>_ALL_TABLES_</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:SchemaRestriction</Name>
+      <Value></Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:RetrieveRelationships</Name>
+      <Value>true</Value>
+    </Annotation>
+    <Annotation>
+      <Name>http://schemas.microsoft.com/DataWarehouse/Designer/1.0:Layouts</Name>
+      <Value>
+        <Layouts xmlns="">
+          <Diagram>
+            <Name>_ALL_TABLES_</Name>
+            <DiagramLayout />
+            <ShowRelationshipNames>False</ShowRelationshipNames>
+            <UseDiagramDefaultLayout>True</UseDiagramDefaultLayout>
+            <DiagramViewPortLeft>0</DiagramViewPortLeft>
+            <DiagramViewPortTop>0</DiagramViewPortTop>
+            <DiagramBoundingLeft>0</DiagramBoundingLeft>
+            <DiagramBoundingTop>0</DiagramBoundingTop>
+            <DiagramZoom>100</DiagramZoom>
+          </Diagram>
+        </Layouts>
+      </Value>
+    </Annotation>
+  </Annotations>
+  <DataSourceID>SBA National</DataSourceID>
+  <Schema>
+    <xs:schema id="SBA_x0020_National" xmlns="" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata" xmlns:msprop="urn:schemas-microsoft-com:xml-msprop">
+      <xs:element name="SBA_x0020_National" msdata:IsDataSet="true" msdata:UseCurrentLocale="true" msprop:design-time-name="4f2496ce-f034-4254-8909-5f1f359446df">
+        <xs:complexType>
+          <xs:choice minOccurs="0" maxOccurs="unbounded">
+            <xs:element name="dbo_Dim_ApprovalDate" msprop:DbTableName="Dim_ApprovalDate" msprop:FriendlyName="Dim_ApprovalDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="77a6ba85-81a0-477f-9d80-b405823eabdd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ApprovalDateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ApprovalDateID" msprop:DbColumnName="ApprovalDateID" msprop:design-time-name="96432637-bceb-4a3d-b5a1-197de0c55432" type="xs:int" />
+                  <xs:element name="ApprovalDate" msprop:FriendlyName="ApprovalDate" msprop:DbColumnName="ApprovalDate" msprop:design-time-name="1985a6ef-7cf7-427b-84bc-3024bd14d49d" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Bank" msprop:DbTableName="Dim_Bank" msprop:FriendlyName="Dim_Bank" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="7f05f425-5f9c-48d7-bd4b-151ade19e0fd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BankID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="BankID" msprop:DbColumnName="BankID" msprop:design-time-name="84c29aed-0928-42ca-bc5f-c5c0731e921d" type="xs:int" />
+                  <xs:element name="Bank" msprop:FriendlyName="Bank" msprop:DbColumnName="Bank" msprop:design-time-name="b8650704-c6c0-44c8-93b9-db142c594e12" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="100" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateID" msprop:FriendlyName="StateID" msprop:DbColumnName="StateID" msprop:design-time-name="489a499c-c910-470e-84c9-b7cdb7510c57" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Borrower" msprop:DbTableName="Dim_Borrower" msprop:FriendlyName="Dim_Borrower" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="71ec65e4-cc3c-4eb0-841a-4f34255ce5d7">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="BorrowerID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="BorrowerID" msprop:DbColumnName="BorrowerID" msprop:design-time-name="e41eb2cb-5b81-4778-88a9-66df23210752" type="xs:int" />
+                  <xs:element name="Borrower" msprop:FriendlyName="Borrower" msprop:DbColumnName="Borrower" msprop:design-time-name="8881e996-ac0c-424a-9698-db079b65a81f" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="200" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="CityID" msprop:FriendlyName="CityID" msprop:DbColumnName="CityID" msprop:design-time-name="262f4a67-29ac-481b-b18b-fd2a21c5ac68" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_ChgOffDate" msprop:DbTableName="Dim_ChgOffDate" msprop:FriendlyName="Dim_ChgOffDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="99c193e9-99b5-43b3-9570-9cbad175a978">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="ChgOffDateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="ChgOffDateID" msprop:DbColumnName="ChgOffDateID" msprop:design-time-name="60b7c016-528f-47ea-bcf6-16662c78b312" type="xs:int" />
+                  <xs:element name="ChgOffDate" msprop:FriendlyName="ChgOffDate" msprop:DbColumnName="ChgOffDate" msprop:design-time-name="57dfa268-dead-444c-a4be-71cd191fa829" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_City" msprop:DbTableName="Dim_City" msprop:FriendlyName="Dim_City" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="aee336c2-0e2e-44e9-99d3-11b7fa88c34e">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="CityID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="CityID" msprop:DbColumnName="CityID" msprop:design-time-name="ea3a1b7d-5541-444f-b0cd-8da13cfad501" type="xs:int" />
+                  <xs:element name="City" msprop:FriendlyName="City" msprop:DbColumnName="City" msprop:design-time-name="e7dcf86e-b3c6-43fc-a10b-2b94a22b184a" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="50" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="StateID" msprop:FriendlyName="StateID" msprop:DbColumnName="StateID" msprop:design-time-name="07501fc8-a8cf-4a1b-8971-f77cbbabb126" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_Date" msprop:DbTableName="Dim_Date" msprop:FriendlyName="Dim_Date" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="a69d4907-2ef7-4996-b5d4-c89ec85725a2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="Date" msprop:FriendlyName="Date" msprop:DbColumnName="Date" msprop:design-time-name="93ed8f29-8ece-444e-9cfe-fac9752d5d07" type="xs:dateTime" />
+                  <xs:element name="Day" msprop:FriendlyName="Day" msprop:DbColumnName="Day" msprop:design-time-name="433c62da-0a67-4278-b102-ff7792b1e748" type="xs:int" minOccurs="0" />
+                  <xs:element name="Month" msprop:FriendlyName="Month" msprop:DbColumnName="Month" msprop:design-time-name="b4934023-bc94-4d51-9c84-4f4886f55433" type="xs:int" minOccurs="0" />
+                  <xs:element name="Year" msprop:FriendlyName="Year" msprop:DbColumnName="Year" msprop:design-time-name="19112e09-2fa8-4679-ba58-6e44a9c2a1c5" type="xs:int" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_DisbursementDate" msprop:DbTableName="Dim_DisbursementDate" msprop:FriendlyName="Dim_DisbursementDate" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="0828387e-fab9-4421-aea5-b985912888e1">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="DisbursementDateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="DisbursementDateID" msprop:DbColumnName="DisbursementDateID" msprop:design-time-name="791d02f5-9106-4b6a-9771-8f8b27a48e58" type="xs:int" />
+                  <xs:element name="DisbursementDate" msprop:FriendlyName="DisbursementDate" msprop:DbColumnName="DisbursementDate" msprop:design-time-name="81378816-e74d-4f67-8c87-ef7f01a391c3" type="xs:dateTime" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_MIS_Status" msprop:DbTableName="Dim_MIS_Status" msprop:FriendlyName="Dim_MIS_Status" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="1f799b25-44bc-48c7-8ed4-163099f19733">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="MIS_StatusID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="MIS_StatusID" msprop:DbColumnName="MIS_StatusID" msprop:design-time-name="42d452be-b6a4-4d36-a2a3-a8fba0a6cd04" type="xs:int" />
+                  <xs:element name="MIS_Status" msprop:FriendlyName="MIS_Status" msprop:DbColumnName="MIS_Status" msprop:design-time-name="7e3a0709-2800-4e12-abb6-257dc6033278" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_NAICS" msprop:DbTableName="Dim_NAICS" msprop:FriendlyName="Dim_NAICS" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="28eee71a-01b6-41bf-9e52-b809b7e7ce45">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="NAICSID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="NAICSID" msprop:DbColumnName="NAICSID" msprop:design-time-name="1ac388c3-e842-46f9-b542-b349752370bb" type="xs:int" />
+                  <xs:element name="NAICS" msprop:FriendlyName="NAICS" msprop:DbColumnName="NAICS" msprop:design-time-name="f2301939-9b38-4b77-bf60-62546bdad5c9" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="Industry" msprop:FriendlyName="Industry" msprop:DbColumnName="Industry" msprop:design-time-name="b796b631-c9d5-4d70-84cd-4484b6f18799" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="2" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_NewExist" msprop:DbTableName="Dim_NewExist" msprop:FriendlyName="Dim_NewExist" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="3bf00939-c3db-4469-88b1-1ae90c936ee2">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="NewExistID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="NewExistID" msprop:DbColumnName="NewExistID" msprop:design-time-name="0a91a3ea-bd7a-404c-884c-a84f4bbad80a" type="xs:int" />
+                  <xs:element name="NewExist" msprop:FriendlyName="NewExist" msprop:DbColumnName="NewExist" msprop:design-time-name="bb96fc37-2dd0-48c1-9c0c-745d8b7abe69" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_State" msprop:DbTableName="Dim_State" msprop:FriendlyName="Dim_State" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="716c7d6c-6592-42b4-8a42-d49a3c12f93b">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="StateID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="StateID" msprop:DbColumnName="StateID" msprop:design-time-name="1ed13fd6-5634-443f-b9d4-ba46a2d1a4e5" type="xs:int" />
+                  <xs:element name="State" msprop:FriendlyName="State" msprop:DbColumnName="State" msprop:design-time-name="6bc29c43-65db-45c7-9545-1a52b50af325" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="10" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Dim_UrbanRural" msprop:DbTableName="Dim_UrbanRural" msprop:FriendlyName="Dim_UrbanRural" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="247b7644-b9d9-43a7-9141-c80c63cac0cd">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="UrbanRuralID" msdata:ReadOnly="true" msdata:AutoIncrement="true" msprop:FriendlyName="UrbanRuralID" msprop:DbColumnName="UrbanRuralID" msprop:design-time-name="9d00c05c-9999-4dd4-929e-1c3fb565100f" type="xs:int" />
+                  <xs:element name="UrbanRural" msprop:FriendlyName="UrbanRural" msprop:DbColumnName="UrbanRural" msprop:design-time-name="b202276e-419d-4763-865a-eab4337cdc1d" minOccurs="0">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="1" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+            <xs:element name="dbo_Fact" msprop:DbTableName="Fact" msprop:FriendlyName="Fact" msprop:TableType="Table" msprop:DbSchemaName="dbo" msprop:design-time-name="88f4cef0-ebcd-464b-823a-34e24c1f4e23">
+              <xs:complexType>
+                <xs:sequence>
+                  <xs:element name="LoanNr_ChkDgt" msprop:FriendlyName="LoanNr_ChkDgt" msprop:DbColumnName="LoanNr_ChkDgt" msprop:design-time-name="710f1d3c-ba1c-4f31-aa6f-9951c351e9c4">
+                    <xs:simpleType>
+                      <xs:restriction base="xs:string">
+                        <xs:maxLength value="20" />
+                      </xs:restriction>
+                    </xs:simpleType>
+                  </xs:element>
+                  <xs:element name="BorrowerID" msprop:FriendlyName="BorrowerID" msprop:DbColumnName="BorrowerID" msprop:design-time-name="85341bf4-28a9-4afe-8ba5-50d9d16ae5fb" type="xs:int" minOccurs="0" />
+                  <xs:element name="BankID" msprop:FriendlyName="BankID" msprop:DbColumnName="BankID" msprop:design-time-name="2d8920e5-c85d-44b2-92a1-5f38ddc51fdb" type="xs:int" minOccurs="0" />
+                  <xs:element name="NAICSID" msprop:FriendlyName="NAICSID" msprop:DbColumnName="NAICSID" msprop:design-time-name="ee33ca5c-475a-4166-973e-c2918c65b9d2" type="xs:int" minOccurs="0" />
+                  <xs:element name="ApprovalDateID" msprop:FriendlyName="ApprovalDateID" msprop:DbColumnName="ApprovalDateID" msprop:design-time-name="4d24dcef-e151-4098-aaea-714598c9d91c" type="xs:int" minOccurs="0" />
+                  <xs:element name="Term" msprop:FriendlyName="Term" msprop:DbColumnName="Term" msprop:design-time-name="bf70395b-94e9-4a61-8157-12c8c9c14ca1" type="xs:int" minOccurs="0" />
+                  <xs:element name="NoEmp" msprop:FriendlyName="NoEmp" msprop:DbColumnName="NoEmp" msprop:design-time-name="c7162b24-9b46-4564-bba8-3cf0a37e4462" type="xs:int" minOccurs="0" />
+                  <xs:element name="NewExistID" msprop:FriendlyName="NewExistID" msprop:DbColumnName="NewExistID" msprop:design-time-name="f2548870-0086-4c72-b345-3a264a0d03ec" type="xs:int" minOccurs="0" />
+                  <xs:element name="UrbanRuralID" msprop:FriendlyName="UrbanRuralID" msprop:DbColumnName="UrbanRuralID" msprop:design-time-name="d1b1fb52-bed9-4acc-abbd-8c177b07b80c" type="xs:int" minOccurs="0" />
+                  <xs:element name="ChgOffDateID" msprop:FriendlyName="ChgOffDateID" msprop:DbColumnName="ChgOffDateID" msprop:design-time-name="06c95145-799c-4af4-90e1-64423c9d459e" type="xs:int" minOccurs="0" />
+                  <xs:element name="DisbursementDateID" msprop:FriendlyName="DisbursementDateID" msprop:DbColumnName="DisbursementDateID" msprop:design-time-name="342fd6a7-90fc-43e5-9402-003d08fd6b90" type="xs:int" minOccurs="0" />
+                  <xs:element name="DisbursementGross" msprop:FriendlyName="DisbursementGross" msprop:DbColumnName="DisbursementGross" msprop:design-time-name="a861f289-9274-4cc7-8ce4-a1cce1d08cd9" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="MIS_StatusID" msprop:FriendlyName="MIS_StatusID" msprop:DbColumnName="MIS_StatusID" msprop:design-time-name="57f67114-f73d-4717-855f-85231c5cb664" type="xs:int" minOccurs="0" />
+                  <xs:element name="ChgOffPrinGr" msprop:FriendlyName="ChgOffPrinGr" msprop:DbColumnName="ChgOffPrinGr" msprop:design-time-name="c1e3b0a3-6aac-4880-8cbc-997303027db2" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="GrAppv" msprop:FriendlyName="GrAppv" msprop:DbColumnName="GrAppv" msprop:design-time-name="8b7b6892-d5d9-47e9-924f-9c03eb764eeb" type="xs:decimal" minOccurs="0" />
+                  <xs:element name="SBA_Appv" msprop:FriendlyName="SBA_Appv" msprop:DbColumnName="SBA_Appv" msprop:design-time-name="708e192c-949f-4137-a85a-aed9d277b9d2" type="xs:decimal" minOccurs="0" />
+                </xs:sequence>
+              </xs:complexType>
+            </xs:element>
+          </xs:choice>
+        </xs:complexType>
+        <xs:unique name="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_ApprovalDate" />
+          <xs:field xpath="ApprovalDateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Bank_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Bank" />
+          <xs:field xpath="BankID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Borrower_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Borrower" />
+          <xs:field xpath="BorrowerID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_ChgOffDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_ChgOffDate" />
+          <xs:field xpath="ChgOffDateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_City_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_City" />
+          <xs:field xpath="CityID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_Date_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_Date" />
+          <xs:field xpath="Date" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_DisbursementDate_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_DisbursementDate" />
+          <xs:field xpath="DisbursementDateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_MIS_Status_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_MIS_Status" />
+          <xs:field xpath="MIS_StatusID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_NAICS_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_NAICS" />
+          <xs:field xpath="NAICSID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_NewExist_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_NewExist" />
+          <xs:field xpath="NewExistID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_State_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_State" />
+          <xs:field xpath="StateID" />
+        </xs:unique>
+        <xs:unique name="dbo_Dim_UrbanRural_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Dim_UrbanRural" />
+          <xs:field xpath="UrbanRuralID" />
+        </xs:unique>
+        <xs:unique name="dbo_Fact_Constraint1" msdata:ConstraintName="Constraint1" msdata:PrimaryKey="true">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="LoanNr_ChkDgt" />
+        </xs:unique>
+        <xs:keyref name="fk_Dim_UrbanRural" refer="dbo_Dim_UrbanRural_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="UrbanRuralID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_Borrower" refer="dbo_Dim_Borrower_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="BorrowerID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_Bank" refer="dbo_Dim_Bank_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="BankID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_ChgOffDate" refer="dbo_Dim_ChgOffDate_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="ChgOffDateID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_ApprovalDate" refer="Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="ApprovalDateID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_NAICS" refer="dbo_Dim_NAICS_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="NAICSID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_MIS_Status" refer="dbo_Dim_MIS_Status_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="MIS_StatusID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_DisbursementDate" refer="dbo_Dim_DisbursementDate_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="DisbursementDateID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Dim_NewExist" refer="dbo_Dim_NewExist_Constraint1">
+          <xs:selector xpath=".//dbo_Fact" />
+          <xs:field xpath="NewExistID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Disbursement_Date" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_DisbursementDate" />
+          <xs:field xpath="DisbursementDate" />
+        </xs:keyref>
+        <xs:keyref name="fk_City_State" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_City" />
+          <xs:field xpath="StateID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Borrower_City" refer="dbo_Dim_City_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_Borrower" />
+          <xs:field xpath="CityID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Bank_State" refer="dbo_Dim_State_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_Bank" />
+          <xs:field xpath="StateID" />
+        </xs:keyref>
+        <xs:keyref name="fk_Approval_Date" refer="dbo_Dim_Date_Constraint1">
+          <xs:selector xpath=".//dbo_Dim_ApprovalDate" />
+          <xs:field xpath="ApprovalDate" />
+        </xs:keyref>
+      </xs:element>
+    </xs:schema>
+    <SBA_x0020_National xmlns="" />
+  </Schema>
+</DataSourceView>

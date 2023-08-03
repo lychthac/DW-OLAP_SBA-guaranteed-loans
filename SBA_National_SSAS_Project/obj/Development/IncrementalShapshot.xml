@@ -1,0 +1,117 @@
+﻿<DeploymentSnapshot xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:ddl2="http://schemas.microsoft.com/analysisservices/2003/engine/2" xmlns:ddl2_2="http://schemas.microsoft.com/analysisservices/2003/engine/2/2" xmlns:ddl100_100="http://schemas.microsoft.com/analysisservices/2008/engine/100/100" xmlns:ddl200="http://schemas.microsoft.com/analysisservices/2010/engine/200" xmlns:ddl200_200="http://schemas.microsoft.com/analysisservices/2010/engine/200/200" xmlns:ddl300="http://schemas.microsoft.com/analysisservices/2011/engine/300" xmlns:ddl300_300="http://schemas.microsoft.com/analysisservices/2011/engine/300/300" xmlns:ddl400="http://schemas.microsoft.com/analysisservices/2012/engine/400" xmlns:ddl400_400="http://schemas.microsoft.com/analysisservices/2012/engine/400/400" xmlns:ddl500="http://schemas.microsoft.com/analysisservices/2013/engine/500" xmlns:ddl500_500="http://schemas.microsoft.com/analysisservices/2013/engine/500/500" xmlns:dwd="http://schemas.microsoft.com/DataWarehouse/Designer/1.0">
+  <Target>
+    <Database>SBA_National_SSAS_Project</Database>
+    <Server>localhost</Server>
+    <ConnectionString>Data Source=localhost;Timeout=0</ConnectionString>
+  </Target>
+  <Options>
+    <TransactionalDeployment>false</TransactionalDeployment>
+    <PartitionDeployment>DeployPartitions</PartitionDeployment>
+    <RoleDeployment>DeployRolesRetainMembers</RoleDeployment>
+    <ProcessingOption>Default</ProcessingOption>
+    <OutputScript></OutputScript>
+    <ImpactAnalysisFile></ImpactAnalysisFile>
+    <ConfigurationSettingsDeployment>Deploy</ConfigurationSettingsDeployment>
+    <OptimizationSettingsDeployment>Deploy</OptimizationSettingsDeployment>
+    <WriteBackTableCreation>UseExisting</WriteBackTableCreation>
+  </Options>
+  <Snapshot>
+    <ObjectSnapshots>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.RelationalDataSource</Type>
+        <TimeStamp>oAKkOIaEYt5cdNe/QFERljpnXUQ=5/27/2023 10:54:33 PM5/27/2023 10:54:33 PM</TimeStamp>
+        <ID>
+          <String>SBA National</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.DataSourceView</Type>
+        <TimeStamp>9f94qVYW4ToLdHDoyxFvq05OsUc=5/27/2023 10:54:44 PM5/27/2023 10:54:44 PM</TimeStamp>
+        <ID>
+          <String>SBA National</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>KBsW3zf7liQcrdpy5FatI9vgYX4=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim New Exist</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>xXVFxUGedrFXrBncpXTNIb2ks/8=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Disbursement Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>0JNMgdYoaKh8gk7hlPLTVYOH7Bw=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim MIS Status</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>oSYrMxtVNBZ7/lWh6dWHCFnhUTo=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim NAICS</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>OrBAB9dnxfCP+bnUR8KNfttOYmI=5/28/2023 1:24:34 AM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Approval Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>16ocJezO++vUNIlCbPBamsVe4T0=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Chg Off Date</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>1gEyT3GV5UaqbkhAx4y9Nh148Lc=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Bank</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>XI6u/J2gPrxIlMDZn2gbwD4osnI=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Borrower</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Dimension</Type>
+        <TimeStamp>J+P5cOA4+S3ePhwn+Jzj2cGIdtY=5/27/2023 10:57:10 PM5/27/2023 10:54:59 PM</TimeStamp>
+        <ID>
+          <String>Dim Urban Rural</String>
+        </ID>
+      </ObjectSnapshot>
+      <ObjectSnapshot>
+        <Type>Microsoft.AnalysisServices.Cube</Type>
+        <TimeStamp>Ktn/819+pC6F2NIMFuTv8cQpWiQ=6/14/2023 6:37:36 PM5/27/2023 10:54:58 PMMl+mHT5AdtgfgFe1hzWosLbI0tU=5/30/2023 8:51:31 AM5/27/2023 10:54:58 PM</TimeStamp>
+        <ID>
+          <String>SBA National</String>
+        </ID>
+      </ObjectSnapshot>
+    </ObjectSnapshots>
+    <DatabaseSnapshot>
+      <Type>Microsoft.AnalysisServices.Database</Type>
+      <TimeStamp>TgVCdH1GAk989rjDJbjjvKfNLYY=5/27/2023 10:54:04 PM5/27/2023 10:54:03 PM</TimeStamp>
+      <ID>
+        <String>SBA_National_SSAS_Project</String>
+      </ID>
+    </DatabaseSnapshot>
+    <Granularity>Coarse</Granularity>
+  </Snapshot>
+  <AssemblyLocations />
+  <ProcessingComplete>true</ProcessingComplete>
+  <LastDeployed>2023-06-14T11:37:45.336667Z</LastDeployed>
+</DeploymentSnapshot>
