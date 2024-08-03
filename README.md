@@ -37,9 +37,9 @@ Bộ dữ liệu được lấy từ Cơ quan quản lý doanh nghiệp nhỏ ch
 | 19	| SBA_Appv	| money	| Số tiền được SBA bảo đảm cho khoản vay |
 
 ## 3. Xây dựng kho dữ liệu
-> Sơ đồ bông tuyết
+> SƠ ĐỒ BÔNG TUYẾT
 
-![](https://github.com/lychthac/DW-OLAP_SBA-guaranteed-loans/issues/1#issue-2445356573)
+![Ảnh1](https://github.com/user-attachments/assets/222f2040-03a5-431b-bfad-d8bb78bbd069)
 
 * BẢNG Dim_State
 
